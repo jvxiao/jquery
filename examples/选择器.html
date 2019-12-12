@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 选择器</title>
+    <script src="https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#button1").click(function () {
+                $("p").hide();
+            });
+        });
+
+         $(document).ready(function(){
+            $("#button2").click(function () {
+                $("#d2").hide();
+            });
+        });
+
+           $(document).ready(function(){
+            $("#button3").click(function () {
+                $(".text").hide();
+            });
+        });
+
+
+    </script>
+
+</head>
+<body>
+<!--
+$("元素")选中所有元素
+
+例如：$("a")可以选中所有的链接元素
+       $("button")选中所有标签
+
+       有多个相同元素时应当使用id, 或者class来获取
+
+$("#id")选中id的唯一对象
+
+$(".class") 选中class类型的所有对象
+-->
+
+
+<div>
+    <h1> 元素选择器</h1>
+<p> 点击鼠标，我就不见了</p>
+<button id="button1"> click me </button>
+</div>
+
+<div>
+    <h1> id选择器</h1>
+<h2 id="d2"> 点击鼠标，我也不见了</h2>
+<button id="button2"> click me </button>
+</div>
+
+
+<div>
+    <h1> id选择器</h1>
+<h2 class="text"> 点击鼠标，我也不见了</h2>
+    <h2 class="text"> 点击鼠标，我也不见了</h2>
+<button id="button3"> click me </button>
+</div>
+
+</body>
+</html>

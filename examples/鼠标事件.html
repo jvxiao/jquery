@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件</title>
+    <script src="https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#p1").click(function () {
+                $(this).hide()
+            })
+        });
+
+         $(document).ready(function () {
+            $("#p2").dblclick(function () {
+                $(this).hide()
+            })
+        });
+
+         $(document).ready(function () {
+            $("#p3").mouseenter(function () {
+                alert("鼠标进入")
+            })
+        });
+/*
+        $(document).ready(function () {
+            $("#p4").mouseleave(function () {
+                alert("鼠标离开")
+            })
+        });
+
+*/
+
+        $(document).ready(function () {
+            $("#p5").mouseleave(function () {
+                alert("鼠标停留")
+            })
+        });
+
+         $(document).ready(function () {
+            $("#a1").mousedown(function () {
+                alert("鼠标按下")
+            })
+        });
+
+        $(document).ready(function () {
+            $("#a2").mouseup(function () {
+                alert("鼠标放松")
+            })
+        });
+
+              $(document).ready(function () {
+            $("#a3").focus(function () {
+                alert("鼠标聚焦")
+            })
+        });
+
+
+    </script>
+</head>
+<body>
+
+<p id="p1">单击（click)测试区</p></br></br>
+
+<p id="p2">双击（dbclick)测试区</p></br></br>
+<p id="p3">鼠标进入（mouseenter)测试区</p></br></br>
+<p id="p4">鼠标离开（mouseleave)测试区,被注释，否侧会一值弹窗</p></br></br>
+<p id="p5">鼠标停留（hover)测试区</p></br></br>
+
+<a id="a1" href="">鼠标按下（mousedown)测试区</a></br></br></br>
+<a id="a2" href="">鼠标松开（mouseup)测试区</a></br></br></br>
+ 获取焦点（focus)测试区: <input  id="a3", type="text">
+
+
+</body>
+</html>
